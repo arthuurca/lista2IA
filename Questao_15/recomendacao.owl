@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://example.org/leitura#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/leitura#escritoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Autor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#temInteresse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Leitor"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Interesse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#disponivelEm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Disponibilidade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#avaliacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Leitor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ne5a3d627b83b470eb68001c154cd8294b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#idadeMinima">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Formato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#F1">
+    <rdf:type rdf:resource="http://example.org/leitura#Fantasia"/>
+    <titulo>A Ilha das Brumas</titulo>
+    <formato rdf:resource="http://example.org/leitura#Digital"/>
+    <idioma rdf:resource="http://example.org/leitura#Portugues"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#titulo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Impresso">
+    <rdf:type rdf:resource="http://example.org/leitura#Formato"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ne5a3d627b83b470eb68001c154cd8294b2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/leitura#titulo"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Livro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="ne5a3d627b83b470eb68001c154cd8294b2"/>
+    <rdfs:subClassOf rdf:nodeID="ne5a3d627b83b470eb68001c154cd8294b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#publicadoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Editora"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ne5a3d627b83b470eb68001c154cd8294b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/leitura#temInteresse"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/leitura#Interesse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Portugues">
+    <rdf:type rdf:resource="http://example.org/leitura#Idioma"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Editora">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#temGenero">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#leu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Leitor"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ne5a3d627b83b470eb68001c154cd8294b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/leitura#formato"/>
+    <owl:allValuesFrom rdf:resource="http://example.org/leitura#Formato"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#favoritou">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Leitor"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Fantasia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://example.org/leitura#Interesse"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/leitura#Ficcao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#nomeAutor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Autor"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Ciencia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://example.org/leitura#Interesse"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/leitura#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Ficcao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/leitura#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Bob">
+    <rdf:type rdf:resource="http://example.org/leitura#Leitor"/>
+    <temInteresse rdf:resource="http://example.org/leitura#Ciencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#C1">
+    <rdf:type rdf:resource="http://example.org/leitura#Ciencia"/>
+    <titulo>O Universo em Escala</titulo>
+    <formato rdf:resource="http://example.org/leitura#Impresso"/>
+    <idioma rdf:resource="http://example.org/leitura#Portugues"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#publicadoEm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Ana">
+    <rdf:type rdf:resource="http://example.org/leitura#Leitor"/>
+    <temInteresse rdf:resource="http://example.org/leitura#Fantasia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#idioma">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Idioma"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#formato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Formato"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Disponibilidade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#recomendadoPara">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/leitura#Livro"/>
+    <rdfs:range rdf:resource="http://example.org/leitura#Leitor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Idioma">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Autor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Interesse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/leitura#Digital">
+    <rdf:type rdf:resource="http://example.org/leitura#Formato"/>
+  </rdf:Description>
+</rdf:RDF>

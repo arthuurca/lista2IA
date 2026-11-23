@@ -1,0 +1,11 @@
+[
+  {
+    "symptoms": [
+      "febre",
+      "mialgia",
+      "tosse"
+    ],
+    "validated_label": "gripe",
+    "treatment_recommended": "repouso e hidratação; avaliação profissional, especialmente em pessoas de risco"
+  }
+]

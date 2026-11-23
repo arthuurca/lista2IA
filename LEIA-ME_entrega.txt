@@ -1,0 +1,28 @@
+LISTA 2: ARQUIVOS DE ENTREGA ORGANIZADOS POR QUESTÃO
+Integrantes: Ana Leticia Nobre da Silva e Arthur Vinicius Fernandes de Carvalho
+Disciplina: Inteligência Artificial (PPGI 2026.2)
+Professor: Evandro Costa
+
+RAIZ DA PASTA
+* Resolucao_Lista_2_IA.docx: relatório completo com as questões 1 a 15.
+* Resolucao_Lista_2_IA.md: versão em Markdown do relatório completo.
+* apresentacao_demonstracoes.pptx: apresentação em slides (também incluída nas pastas das questões 7, 8, 9, 11 e 15).
+* prototipos_lista2.py: módulo com os protótipos (também copiado dentro de cada pasta que o utiliza).
+* requirements.txt: dependência Owlready2 para inferência OWL.
+
+PASTAS POR QUESTÃO (cada pasta é independente e autocontida)
+* Questao_01/: Resposta_Questao_01.md
+* Questao_02/: Resposta_Questao_02.md, credito_ampliado.csv, prototipos_lista2.py
+* Questao_03/: Resposta_Questao_03.md
+* Questao_04/: Resposta_Questao_04.md
+* Questao_05/: Resposta_Questao_05.md
+* Questao_06/: Resposta_Questao_06.md, prototipos_lista2.py
+* Questao_07/: Resposta_Questao_07.md, sistema_rbc.py, demonstracao_q07.py, casos_retidos_demonstracao.json, prototipos_lista2.py, apresentacao_demonstracoes.pptx
+* Questao_08/: Resposta_Questao_08.md, figura_rede_bayesiana.png, demonstracao_q08.py, prototipos_lista2.py, apresentacao_demonstracoes.pptx
+* Questao_09/: Resposta_Questao_09.md, recomendacao.owl, recomendacao.owl.ttl, demonstracao_q09.py, prototipos_lista2.py, requirements.txt, apresentacao_demonstracoes.pptx
+* Questao_10/: Resposta_Questao_10.md
+* Questao_11/: Resposta_Questao_11.md, agente_classico.py, agente_llm.py, demonstracao_q11.py, prototipos_lista2.py, apresentacao_demonstracoes.pptx
+* Questao_12/: Resposta_Questao_12.md, agente_llm.py, prototipos_lista2.py
+* Questao_13/: Resposta_Questao_13.md
+* Questao_14/: Resposta_Questao_14.md
+* Questao_15/: Resposta_Questao_15.md, recomendacao.owl, recomendacao.owl.ttl, demonstracao_q15.py, prototipos_lista2.py, requirements.txt, apresentacao_demonstracoes.pptx
